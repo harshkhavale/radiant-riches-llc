@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { RiMenuFill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
+import Link from "next/link";
 
 const Navbar = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -32,19 +33,19 @@ const Navbar = () => {
         <div className="links">
           <ul className="flex gap-8">
             <li>
-              <a href="/" className=" text-base ">
+              <Link href={"/"} className=" text-base ">
                 Categories
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className=" text-base ">
+              <Link href={"/"} className=" text-base ">
                 Website Builders
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className=" text-base ">
-                Today's deals
-              </a>
+              <Link href={"/"} className=" text-base ">
+                Todays deals
+              </Link>
             </li>
           </ul>
         </div>

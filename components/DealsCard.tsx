@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface HorizontalCardProps {
@@ -17,7 +18,7 @@ const DealsCard: React.FC<HorizontalCardProps> = ({ card, index }) => {
   return (
     <div className=" rounded-md shadow-md p-4 bg-white">
       <div className=" flex-1 mb-4 flex items-center justify-center">
-        <img src={image} alt={title} className=" w-48  h-42 rounded-md " />
+        <Image src={image} alt={title} className=" w-48  h-42 rounded-md " />
       </div>
 
       <div className=" ml-4 flex flex-col justify-center">

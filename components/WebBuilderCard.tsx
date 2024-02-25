@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
@@ -28,7 +29,7 @@ const WebBuilderCard = ({ data, index }: any) => {
         {index + 1}
       </p>
       <div>
-        <img
+        <Image
           src={image}
           alt={title}
           className="w-auto h-40 md:w-[40vw] rounded-lg"
