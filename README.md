@@ -102,7 +102,7 @@ I am available for work commitments during the following hours:
 
 🌐 **Website URL (Optional):**
 
-The Radient Riches website is hosted at [example.com](https://www.example.com).
+The Radient Riches website is hosted at [https://radiant-riches-llc-cjob.vercel.app/](https://radiant-riches-llc-cjob.vercel.app/).
 
 ---
 
