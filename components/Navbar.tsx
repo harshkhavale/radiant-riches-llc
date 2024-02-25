@@ -1,46 +1,54 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { RiMenuFill } from "react-icons/ri";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
+  const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
+  const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
   return (
-    <div className="navbar bg-dark-color h-16 flex justify-center items-center">
-      <p className="logo font-bold">Radient Riches LLC</p>
-      <div className="search bg-light-color w-64 h-10 rounded-md border border-solid flex items-center">
-        <CiSearch className="icon text-dark-color text-lg ml-2" />
-        <input
-          type="text"
-          className="input bg-light-color flex-grow outline-none text-dark-color font-bold pl-2"
-          placeholder="Search..."
-        />
+    <div className="navbar px-2 text-white bg-[#212731] py-2 flex justify-between md:justify-start md:gap-60 items-center">
+      {!isNonMobileScreens &&
+        (toggle ? (
+          <IoCloseSharp className="text-2xl" />
+        ) : (
+          <RiMenuFill className="text-2xl" />
+        ))}
+      <p className="logo font-bold text-2xl">Radient Riches LLC</p>
+      <div className="search bg-transparent md:bg-white h-full  rounded-md md:border border-solid flex items-center">
+        <CiSearch className="icon text-2xl md:text-black" />
+        {isNonMobileScreens && (
+          <input
+            type="text"
+            className="input w-64 bg-transparent flex-grow outline-none text-dark-color font-bold pl-2 p-2"
+            placeholder="Search..."
+          />
+        )}
       </div>
-      <div className="links">
-        <ul className="flex gap-8">
-          <li>
-            <a
-              href="/"
-              className="text-light-color text-base font-bold hover:text-primary-color"
-            >
-              Categories
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className="text-light-color text-base font-bold hover:text-primary-color"
-            >
-              Website Builders
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              className="text-light-color text-base font-bold hover:text-primary-color"
-            >
-              Today's deals
-            </a>
-          </li>
-        </ul>
-      </div>
+      {isNonMobileScreens && (
+        <div className="links">
+          <ul className="flex gap-8">
+            <li>
+              <a href="/" className=" text-base ">
+                Categories
+              </a>
+            </li>
+            <li>
+              <a href="/" className=" text-base ">
+                Website Builders
+              </a>
+            </li>
+            <li>
+              <a href="/" className=" text-base ">
+                Today's deals
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

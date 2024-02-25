@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoMdCheckmark } from "react-icons/io";
 
 const WebBuilderCard = ({ data, index }: any) => {
   const { image, tag, title, description, rating, highlight } = data;
@@ -22,14 +23,18 @@ const WebBuilderCard = ({ data, index }: any) => {
   };
 
   return (
-    <div className="relative p-8 w-4/5 bg-white text-gray-700 flex items-center gap-8">
-      <p className="absolute top-16 left-[-50px] border-gray-400 border-solid border p-4 rounded-full">
+    <div className="relative m-4 py-8 shadow-md bg-white text-gray-700 flex md:flex-row flex-col items-center gap-8">
+      <p className="absolute top-16 -left-5 border-gray-400 border-solid border h-8 w-8 flex justify-center items-center rounded-full">
         {index + 1}
       </p>
       <div>
-        <img src={image} alt={title} className="w-36 h-28 rounded-lg" />
+        <img
+          src={image}
+          alt={title}
+          className="w-auto h-40 md:w-[40vw] rounded-lg"
+        />
         {tag && (
-          <div className="flex items-center mb-4 gap-4 bg-darkorange absolute top-[-10px] left-[-10px] rounded-r-lg text-white font-bold p-2 text-base">
+          <div className="flex items-center mb-4 gap-4 bg-orange-600 absolute top-0 start-0 rounded-r-3xl text-white font-bold p-2 text-base">
             {tag.icon}
             {tag.title}
           </div>
@@ -41,26 +46,29 @@ const WebBuilderCard = ({ data, index }: any) => {
           {description}
         </p>
         <div className="text-base p-8">
-          <p className="font-bold pb-4">Main Highlight</p>
+          <p className="font-bold ">Main Highlight</p>
           <p>{highlight.description}</p>
           {highlight.main && (
             <>
-              <div className="box">
+              <div className="box bg-[#FFF4ED] m-4 p-4 rounded-3xl flex flex-col gap-2">
                 {highlight.main.map((item: any, index: any) => {
                   return (
-                    <div key={index} className="box-item">
-                      {item.index}
-                      {item.quality}
+                    <div key={index} className="box-item flex gap-2">
+                      <p className="bg-white p-1 text-blue-500">{item.index}</p>
+                      <p> {item.quality}</p>
                     </div>
                   );
                 })}
               </div>
-              <p>Why we love it?</p>
-              <div>
+              <p className=" font-semibold my-2">Why we love it?</p>
+              <div className=" flex flex-col gap-2">
                 {highlight.reason.map((item: any, index: any) => {
                   return (
-                    <div key={index} className="box-item">
-                      {item}
+                    <div key={index} className="box-item flex gap-2">
+                      <div className=" text-[#0855A1] bg-[#EBF5FF] rounded-full p-1">
+                        <IoMdCheckmark />
+                      </div>
+                      <p className=" text-[#4B5665]">{item}</p>
                     </div>
                   );
                 })}
@@ -68,17 +76,21 @@ const WebBuilderCard = ({ data, index }: any) => {
             </>
           )}
         </div>
-        <p className="text-dodgerblue flex items-center">
+        <p className="text-blue-500 flex items-center">
           show more
           <IoIosArrowDown />
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-8">
-        <span className="text-2xl">{rating.score}</span>
-        <span>{rating.tag}</span>
-        <div className="flex items-center">{renderStars(rating.star)}</div>
-        <button className="bg-dodgerblue py-4 px-16 text-white rounded-lg">
+      <div className="flex m-4 flex-col justify-center items-center gap-8">
+        <div className="bg-[#F3F9FF] flex flex-col justify-center items-center gap-4">
+          <span className="text-2xl">{rating.score}</span>
+          <span>{rating.tag}</span>
+          <div className="flex text-yellow-300 items-center">
+            {renderStars(rating.star)}
+          </div>
+        </div>
+        <button className="bg-blue-500 py-4 px-16 rounded-3xl text-white">
           View
         </button>
       </div>

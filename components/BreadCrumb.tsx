@@ -5,10 +5,10 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const BreadCrumb: React.FC = () => {
   return (
-    <div className="bread-crumb container mx-auto px-10 mt-12 text-gray-700">
+    <div className="bread-crumb container mx-auto md:mt-12 mt-8 text-gray-700">
       <p className="text-3xl font-bold mb-5">Best Website builders in the US</p>
-      <div className="hr w-full h-1 bg-gray-300"></div>
-      <div className="flex items-center justify-between mt-5">
+      <div className="hr w-full p-[1px] bg-gray-300"></div>
+      <div className="flex items-center justify-between my-4">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <IoIosCheckmarkCircleOutline />
@@ -24,9 +24,9 @@ const BreadCrumb: React.FC = () => {
           <IoIosArrowDown />
         </div>
       </div>
-      <div className="hr w-full h-1 bg-gray-300"></div>
+      <div className="hr w-full p-[1px] bg-gray-300"></div>
       <div className="flex items-center mt-5">
-        <ul className="flex flex-wrap gap-3">
+        <ul className="flex w-full justify-between">
           <li>Tools</li>
           <li>AWS Builder</li>
           <li>Start Build</li>
