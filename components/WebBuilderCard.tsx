@@ -3,7 +3,7 @@ import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdCheckmark } from "react-icons/io";
-
+import radient from "../public/radient.png";
 const WebBuilderCard = ({ data, index }: any) => {
   const { image, tag, title, description, rating, highlight } = data;
 
@@ -30,7 +30,7 @@ const WebBuilderCard = ({ data, index }: any) => {
       </p>
       <div>
         <Image
-          src={image}
+          src={radient}
           alt={title}
           className="w-auto h-40 md:w-[40vw] rounded-lg"
         />
