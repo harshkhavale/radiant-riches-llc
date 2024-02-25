@@ -1,0 +1,56 @@
+import React from "react";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { GoInfo } from "react-icons/go";
+import { IoIosArrowDown } from "react-icons/io";
+
+const BreadCrumb: React.FC = () => {
+  return (
+    <div className="bread-crumb container mx-auto px-10 mt-12 text-gray-700">
+      <p className="text-3xl font-bold mb-5">Best Website builders in the US</p>
+      <div className="hr w-full h-1 bg-gray-300"></div>
+      <div className="flex items-center justify-between mt-5">
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <IoIosCheckmarkCircleOutline />
+            <p>Last Updated - February 22, 2020</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <GoInfo />
+            <p>Advertising Disclosure</p>
+          </div>
+        </div>
+        <div className="flex items-center">
+          <p>Top Relevant</p>
+          <IoIosArrowDown />
+        </div>
+      </div>
+      <div className="hr w-full h-1 bg-gray-300"></div>
+      <div className="flex items-center mt-5">
+        <ul className="flex flex-wrap gap-3">
+          <li>Tools</li>
+          <li>AWS Builder</li>
+          <li>Start Build</li>
+          <li>Build Supplies</li>
+          <li>Tooling</li>
+          <li>BlueHosting</li>
+        </ul>
+      </div>
+      <div className="flex items-center mt-5">
+        <ul className="flex gap-3">
+          <li>Home</li>
+          <li className="font-bold">{">"}</li>
+          <li>Hosting for all</li>
+          <li className="font-bold">{">"}</li>
+          <li>Hosting</li>
+          <li className="font-bold">{">"}</li>
+          <li>Hosting 6</li>
+          <li className="font-bold">{">"}</li>
+          <li>Hosting 5</li>
+          <li className="font-bold">{">"}</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default BreadCrumb;
