@@ -18,7 +18,7 @@ const Navbar = () => {
         ) : (
           <RiMenuFill className="text-2xl" />
         ))}
-      <p className="logo font-bold text-2xl">Radient Riches LLC</p>
+      <p className="logo font-bold text-2xl">Radiant Riches LLC</p>
       <div className="search bg-transparent md:bg-white h-full  rounded-md md:border border-solid flex items-center">
         <CiSearch className="icon text-2xl md:text-black" />
         {isNonMobileScreens && (

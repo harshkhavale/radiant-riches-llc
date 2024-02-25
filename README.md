@@ -1,16 +1,16 @@
-**Radient Riches - Next.js/ReactJS Website**
+**Radiant Riches - Next.js/ReactJS Website**
 
 ---
 
 🚀 **Introduction:**
 
-Welcome to Radient Riches, a stunning Next.js/ReactJS website showcasing the beauty of modular components and responsive design. This project is a conversion of a one-page design from Figma into a fully functional website.
+Welcome to Radiant Riches, a stunning Next.js/ReactJS website showcasing the beauty of modular components and responsive design. This project is a conversion of a one-page design from Figma into a fully functional website.
 
 ---
 
 🎨 **Design Inspiration:**
 
-The design for Radient Riches was inspired by a blend of modern aesthetics and elegant simplicity. The Figma design provided a clear vision for the layout and styling of the website, which guided the development process.
+The design for Radiant Riches was inspired by a blend of modern aesthetics and elegant simplicity. The Figma design provided a clear vision for the layout and styling of the website, which guided the development process.
 
 ---
 
@@ -53,7 +53,7 @@ The design for Radient Riches was inspired by a blend of modern aesthetics and e
 
 📱 **Responsive Design:**
 
-Radient Riches is built with responsiveness in mind, ensuring a seamless experience across all devices. Mobile-first design principles were applied, guaranteeing optimal performance on smartphones, tablets, and desktops.
+Radiant Riches is built with responsiveness in mind, ensuring a seamless experience across all devices. Mobile-first design principles were applied, guaranteeing optimal performance on smartphones, tablets, and desktops.
 
 ---
 
@@ -62,13 +62,13 @@ Radient Riches is built with responsiveness in mind, ensuring a seamless experie
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/harshkhavale/Radient-Riches.git
+   git clone https://github.com/harshkhavale/Radiant-Riches.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd Radient-Riches
+   cd Radiant-Riches
    npm install
    ```
 
@@ -102,11 +102,11 @@ I am available for work commitments during the following hours:
 
 🌐 **Website URL (Optional):**
 
-The Radient Riches website is hosted at [https://radiant-riches-llc-cjob.vercel.app/](https://radiant-riches-llc-cjob.vercel.app/).
+The Radiant Riches website is hosted at [https://radiant-riches-llc-cjob.vercel.app/](https://radiant-riches-llc-cjob.vercel.app/).
 
 ---
 
-🚀 Thank you for considering my submission for the ReactJS/NextJS internship assignment! I'm excited about the opportunity to contribute to Radient Riches and showcase my skills in web development. Looking forward to hearing from you soon.
+🚀 Thank you for considering my submission for the ReactJS/NextJS internship assignment! I'm excited about the opportunity to contribute to Radiant Riches LLC and showcase my skills in web development. Looking forward to hearing from you soon.
 
 Best regards,
 Harsh Khavale
