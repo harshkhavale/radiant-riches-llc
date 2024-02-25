@@ -24,7 +24,7 @@ const WebBuilderCard = ({ data, index }: any) => {
   };
 
   return (
-    <div className="relative m-4 py-8 shadow-md bg-white text-gray-700 flex md:flex-row flex-col items-center gap-8">
+    <div className="relative m-4 p-4 shadow-md bg-white text-gray-700 flex md:flex-row flex-col items-center gap-8">
       <p className="absolute top-16 -left-5 border-gray-400 border-solid border h-8 w-8 flex justify-center items-center rounded-full">
         {index + 1}
       </p>
@@ -42,8 +42,8 @@ const WebBuilderCard = ({ data, index }: any) => {
         )}
       </div>
       <div className="info">
-        <p className="text-xl font-bold mb-4">
-          <strong>{title} - </strong>
+        <p className="text-xl text-[#4B5665] font-bold mb-4">
+          <strong className="text-black">{title} - </strong>
           {description}
         </p>
         <div className="text-base p-8">
@@ -84,9 +84,9 @@ const WebBuilderCard = ({ data, index }: any) => {
       </div>
 
       <div className="flex m-4 flex-col justify-center items-center gap-8">
-        <div className="bg-[#F3F9FF] flex flex-col justify-center items-center gap-4">
-          <span className="text-2xl">{rating.score}</span>
-          <span>{rating.tag}</span>
+        <div className="bg-[#F3F9FF] p-2 rounded-2xl flex flex-col justify-center items-center gap-4">
+          <span className="text-3xl text-[#0855A1]">{rating.score}</span>
+          <span className="text-[#0855A1]">{rating.tag}</span>
           <div className="flex text-yellow-300 items-center">
             {renderStars(rating.star)}
           </div>

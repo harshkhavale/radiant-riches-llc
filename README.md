@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Radient Riches - Next.js/ReactJS Website**
 
-## Getting Started
+---
 
-First, run the development server:
+🚀 **Introduction:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Welcome to Radient Riches, a stunning Next.js/ReactJS website showcasing the beauty of modular components and responsive design. This project is a conversion of a one-page design from Figma into a fully functional website.
+
+---
+
+🎨 **Design Inspiration:**
+
+The design for Radient Riches was inspired by a blend of modern aesthetics and elegant simplicity. The Figma design provided a clear vision for the layout and styling of the website, which guided the development process.
+
+---
+
+🔧 **Technologies Used:**
+
+- Next.js
+- React.js
+- Tailwind
+- Figma
+
+---
+
+💻 **Project Structure:**
+
+```
+/ Radiant-Riches-LLC
+  ├── components
+  │   ├── Breadcrumbs.tsx
+  │   ├── Footer.tsx
+  │   ├── DealsCard.tsx
+  │   ├── Navbar.tsx
+  │   ├── WebBuilderCard.tsx
+  │   └── ...
+  ├── app
+  │   ├── page.tsx
+  |   ├── globals.css
+  │   └── layout.tsx
+  ├── constant
+  │   ├── index.js
+  │   └── ...
+  ├── public
+  │   ├── images
+  │   └── ...
+  ├── ...
+  ├── README.md
+  └── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📱 **Responsive Design:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Radient Riches is built with responsiveness in mind, ensuring a seamless experience across all devices. Mobile-first design principles were applied, guaranteeing optimal performance on smartphones, tablets, and desktops.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+📥 **How to Run:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/harshkhavale/Radient-Riches.git
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   cd Radient-Riches
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to http://localhost:3000 to view the website.
+
+---
+
+🌟 **Contact Information:**
+
+For any inquiries or feedback, feel free to reach out:
+
+📧 Email: harshkhavale1102@gmail.com
+
+🔗 Linkedin: https://www.linkedin.com/in/harshkhavale11/
+
+---
+
+📆 **Work Timings:**
+
+I am available for work commitments during the following hours:
+
+- Monday to Friday: 9:00 AM - 5:00 PM (UTC)
+
+---
+
+🌐 **Website URL (Optional):**
+
+The Radient Riches website is hosted at [example.com](https://www.example.com).
+
+---
+
+🚀 Thank you for considering my submission for the ReactJS/NextJS internship assignment! I'm excited about the opportunity to contribute to Radient Riches and showcase my skills in web development. Looking forward to hearing from you soon.
+
+Best regards,
+Harsh Khavale

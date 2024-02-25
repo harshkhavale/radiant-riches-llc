@@ -33,8 +33,8 @@ const DealsCard: React.FC<HorizontalCardProps> = ({ card, index }) => {
         <p className="text-[#626E79] text-base mb-2">{description}</p>
 
         <div className="flex items-center justify-between m-4 ">
-          <div className="text-xl font-bold">{price}</div>
-          <div className="text-sm font-bold text-[#9FA9B3]">$49.96</div>
+          <div className="text-xl text-[#5C6874]">{price}</div>
+          <div className="text-sm text-[#9FA9B3]">$49.96</div>
 
           <div className="text-red-500">{discount}</div>
         </div>
